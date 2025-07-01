@@ -19,7 +19,7 @@ pipeline {
                 sh '''
                    docker stop alpine-infra-reporter || true
                    docker rm alpine-infra-reporter || true
-                   docker run -d -p 5000:5000 --name alpine-infra-reporter alpine-infra-reporter
+                   docker run -d -p 5055:5055 --name alpine-infra-reporter alpine-infra-reporter
                 '''
             }
         }
