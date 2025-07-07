@@ -18,6 +18,5 @@ cd alpine-infra-reporter
 
 DOCKER_BUILDKIT=0 docker build -t reporter .
 
-docker run -p 5055:5055 reporter
-
+docker run -d -p 5055:5055 reporter
 
